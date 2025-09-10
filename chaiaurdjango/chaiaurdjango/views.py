@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 def home(request):
     #return HttpResponse("Hello, World! Welcome to Chaiaur Django Home Page!")
-    return render(request, 'index.html')
+    return render(request, 'website/index.html')
 def about(request):
     return HttpResponse("Hello, World! Welcome to Chaiaur Django about Page!")
 
