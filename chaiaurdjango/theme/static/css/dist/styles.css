@@ -9,9 +9,11 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-orange-500: oklch(70.5% 0.213 47.604);
+    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-black: #000;
+    --spacing: 0.25rem;
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --tracking-normal: 0em;
@@ -214,11 +216,17 @@
   .h-screen {
     height: 100vh;
   }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
   .items-center {
     align-items: center;
   }
   .justify-center {
     justify-content: center;
+  }
+  .bg-amber-300 {
+    background-color: var(--color-amber-300);
   }
   .bg-blue-500 {
     background-color: var(--color-blue-500);
@@ -228,6 +236,9 @@
   }
   .bg-orange-500 {
     background-color: var(--color-orange-500);
+  }
+  .text-center {
+    text-align: center;
   }
   .font-serif {
     font-family: var(--font-serif);

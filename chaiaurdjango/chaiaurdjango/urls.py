@@ -25,5 +25,6 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
     path('chai/', include('chai.urls')),
-    
+
+    path("__reload__/", include("django_browser_reload.urls")), #for hot reload (only for development purpose/ very heavy on resources always keep on last)
 ]
