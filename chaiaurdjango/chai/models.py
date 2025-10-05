@@ -19,3 +19,4 @@ class ChaiVariety(models.Model):
 
 def __str__(self):           #ISSSUE OVERR HHEEERRRREEEEEE !!!!!!!!!
     return self.name         #ISSSUE OVERR HHEEERRRREEEEEE !!!!!!!!! ep 5, models django aur chai, time - 25min
+
